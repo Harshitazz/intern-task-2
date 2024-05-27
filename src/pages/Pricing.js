@@ -48,7 +48,7 @@ function Pricing() {
           </div>
           <CustomSlider onSliderChange={handleSliderChange} />
           <div className="flex min-[375px]:hidden items-center justify-center ">
-                <span className="text-2xl font-bold" style={{ color: 'hsl(227, 35%, 25%)' }}>${sliderValue}.00</span>
+                <span className="text-2xl font-bold text-moneycolour dark:text-white" >${sliderValue}.00</span>
                 <p >/month</p>
               </div>
 
