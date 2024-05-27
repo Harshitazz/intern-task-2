@@ -1,0 +1,58 @@
+/* CustomSlider.css */
+
+.custom-slider-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+  }
+  
+  .custom-slider {
+    -webkit-appearance: none;
+    margin: auto;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) calc(var(--value) * 1% + 5px), #d3d3d3 calc(var(--value) * 1% + 5px), #d3d3d3 100%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(174, 86%, 45%); /* Green background */
+    background-image: url('../images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+
+  background-position: 50% 50%;
+  }
+  
+  .custom-slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: hsl(174, 86%, 45%); /* Green background */
+    background-image: url('../images//icon-slider.svg');
+    background-repeat: no-repeat;
+    background-size: 60%; /* Adjust the size of the SVG icon */
+    background-position: 50% 50%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+
+  }
+  
+  .slider-value {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  
